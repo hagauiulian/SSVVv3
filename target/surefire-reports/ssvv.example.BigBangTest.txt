@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: ssvv.example.BigBangTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.052 s <<< FAILURE! - in ssvv.example.BigBangTest
+test_integration(ssvv.example.BigBangTest)  Time elapsed: 0.028 s  <<< ERROR!
+java.time.format.DateTimeParseException: Text '(2007-12-03T10:15:30)' could not be parsed at index 0
+	at ssvv.example.BigBangTest.test_integration(BigBangTest.java:109)
+
+test_addGrade(ssvv.example.BigBangTest)  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.NullPointerException
+	at ssvv.example.BigBangTest.test_addGrade(BigBangTest.java:75)
+

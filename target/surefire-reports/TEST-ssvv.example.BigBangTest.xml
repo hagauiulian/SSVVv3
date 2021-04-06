@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ssvv.example.AppTest" time="0.659" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ssvv.example.BigBangTest" time="0.052" tests="4" errors="2" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,5 +60,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="tc_1_AddStudentsValid" classname="ssvv.example.AppTest" time="0.303"/>
+  <testcase name="test_addStudent" classname="ssvv.example.BigBangTest" time="0.003"/>
+  <testcase name="test_addAssignment" classname="ssvv.example.BigBangTest" time="0.011"/>
+  <testcase name="test_integration" classname="ssvv.example.BigBangTest" time="0.028">
+    <error message="Text &apos;(2007-12-03T10:15:30)&apos; could not be parsed at index 0" type="java.time.format.DateTimeParseException">java.time.format.DateTimeParseException: Text '(2007-12-03T10:15:30)' could not be parsed at index 0
+	at ssvv.example.BigBangTest.test_integration(BigBangTest.java:109)
+</error>
+    <system-out><![CDATA[1#1#1#10
+-12.5
+]]></system-out>
+  </testcase>
+  <testcase name="test_addGrade" classname="ssvv.example.BigBangTest" time="0.009">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at ssvv.example.BigBangTest.test_addGrade(BigBangTest.java:75)
+</error>
+    <system-out><![CDATA[null
+]]></system-out>
+  </testcase>
 </testsuite>
